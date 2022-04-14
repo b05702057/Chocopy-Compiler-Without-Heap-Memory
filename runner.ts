@@ -28,11 +28,14 @@ export async function run(source : string, config: any) : Promise<number> {
     const parsed = parse(source);
     var returnType = "";
     var returnExpr = "";
-    const lastExpr = parsed[parsed.length - 1]
-    if(lastExpr.tag === "expr") {
-      returnType = "(result i32)";
-      returnExpr = "(local.get $$last)"
+    if (parsed.stmts.length != 0) {
+      const lastExpr = parsed.stmts[parsed.stmts.length - 1]
+      if(lastExpr.tag === "expr") {
+        returnType = "(result i32)";
+        returnExpr = "(local.get $$last)"
+      }
     }
+
     const compiled = compiler.compile(source);
     const importObject = config.importObject;
 
