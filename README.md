@@ -1,6 +1,6 @@
 # Chocopy-Compiler-Without-Heap-Memory
 
-### A bigger compiler that is can support all but the heap-manipulating parts of ChocoPy.
+### A bigger compiler that can support all but the heap-manipulating parts of ChocoPy.
 
 ## Task
 Implemented the representation of values (integers, boolean, and None), global and local variables, functions with parameters, for loop, and so on.
