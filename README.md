@@ -3,7 +3,7 @@
 ### A bigger compiler that can support all but the heap-manipulating parts of ChocoPy.
 
 ## Task
-Implemented the representation of values (integers, boolean, and None), global and local variables, functions with parameters, for loop, and so on.
+Implemented the representation of values (integers, boolean, and None), global/local variables, functions with parameters, for loop, and so on.
 
 ### Run Locally
 * Run this Command: git clone https://github.com/b05702057/Chocopy-Compiler-Without-Heap-Memory.git
